@@ -5,9 +5,29 @@
 ### 卡牌示例
 
 <div style="display: flex; gap: 20px; margin: 20px 0;">
-  <img src="/Dynasties/_media/户部尚书.png" alt="户部尚书" style="max-width: 200px; border-radius: 8px;">
-  <img src="/Dynasties/_media/中书令.png" alt="中书令" style="max-width: 200px; border-radius: 8px;">
-  <img src="/Dynasties/_media/太常卿.png" alt="太常卿" style="max-width: 200px; border-radius: 8px;">
+  <wa-card class="card-overview" style="width:200px;">
+    <div slot="media" class="wa-frame:portrait">
+      <img src="/Dynasties/_media/户部尚书.png" alt="户部尚书" />
+    </div>
+    <strong>户部尚书</strong>
+    <small class="wa-caption-s">户部尚书 / Minister of Treasury</small>
+  </wa-card>
+
+  <wa-card class="card-overview" style="width:200px;">
+    <div slot="media" class="wa-frame:portrait">
+      <img src="/Dynasties/_media/中书令.png" alt="中书令" />
+    </div>
+    <strong>中书令</strong>
+    <small class="wa-caption-s">中书令 / Secretary of State</small>
+  </wa-card>
+
+  <wa-card class="card-overview" style="width:200px;">
+    <div slot="media" class="wa-frame:portrait">
+      <img src="/Dynasties/_media/太常卿.png" alt="太常卿" />
+    </div>
+    <strong>太常卿</strong>
+    <small class="wa-caption-s">太常卿 / Master of Ceremonies</small>
+  </wa-card>
 </div>
 
 * 唐×10（黄），宋×10（绿），元×10（蓝），明×10（红）
@@ -33,16 +53,20 @@
 ### 执行政策
 
 <div style="display: flex; gap: 20px; margin: 20px 0;">
-  <div style="text-align: center;">
-    <img src="/Dynasties/_media/政策卡牌背面.png" alt="政策卡牌-背面" style="max-width: 200px; border-radius: 8px;">
-    <p>政策卡牌-背面</p>
-  </div>
-  <div style="text-align: center;">
-    <img src="/Dynasties/_media/政策卡牌正面.png" alt="政策卡牌-正面" style="max-width: 200px; border-radius: 8px;">
-    <p>政策卡牌-正面</p>
-  </div>
-</div>
+  <wa-card class="card-media" style="width:220px; text-align:center;">
+    <div slot="media" class="wa-frame:portrait">
+      <img src="/Dynasties/_media/政策卡牌背面.png" alt="政策卡牌-背面" />
+    </div>
+    <small class="wa-caption-s">政策卡牌 - 背面</small>
+  </wa-card>
 
+  <wa-card class="card-media" style="width:220px; text-align:center;">
+    <div slot="media" class="wa-frame:portrait">
+      <img src="/Dynasties/_media/政策卡牌正面.png" alt="政策卡牌-正面" />
+    </div>
+    <small class="wa-caption-s">政策卡牌 - 正面</small>
+  </wa-card>
+</div>
 * 每个阵营一套×4
 
 * 干旱×3，地震×3，洪水×3，瘟疫×3
@@ -112,16 +136,20 @@
 ### 颁布政策
 
 <div style="display: flex; gap: 20px; margin: 20px 0;">
-  <div style="text-align: center;">
-    <img src="/Dynasties/_media/颁布政策-背面.png" alt="颁布政策-背面" style="max-width: 200px; border-radius: 8px;">
-    <p>颁布政策-背面</p>
-  </div>
-  <div style="text-align: center;">
-    <img src="/Dynasties/_media/颁布政策-正面.png" alt="颁布政策-正面" style="max-width: 200px; border-radius: 8px;">
-    <p>颁布政策-正面</p>
-  </div>
-</div>
+  <wa-card class="card-media" style="width:220px; text-align:center;">
+    <div slot="media" class="wa-frame:portrait">
+      <img src="/Dynasties/_media/颁布政策-背面.png" alt="颁布政策 - 背面" />
+    </div>
+    <small class="wa-caption-s">颁布政策 - 背面</small>
+  </wa-card>
 
+  <wa-card class="card-media" style="width:220px; text-align:center;">
+    <div slot="media" class="wa-frame:portrait">
+      <img src="/Dynasties/_media/颁布政策-正面.png" alt="颁布政策 - 正面" />
+    </div>
+    <small class="wa-caption-s">颁布政策 - 正面</small>
+  </wa-card>
+</div>
 * 每个阵营一套×4
 * 割壤练兵×1，减籍抚民×1，招商扩市×1，祈天延命×1
 

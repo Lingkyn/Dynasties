@@ -4,10 +4,27 @@
 
 ### 卡牌示例
 
-<div style="display: flex; gap: 20px; margin: 20px 0;">
-  <img src="/Dynasties/_media/户部尚书.png" alt="户部尚书" style="max-width: 200px; border-radius: 8px;">
-  <img src="/Dynasties/_media/中书令.png" alt="中书令" style="max-width: 200px; border-radius: 8px;">
-  <img src="/Dynasties/_media/太常卿.png" alt="太常卿" style="max-width: 200px; border-radius: 8px;">
+<div class="wa-grid">
+  <wa-card class="card-overview card-media">
+    <div slot="media" class="wa-frame:portrait">
+      <img src="/Dynasties/_media/户部尚书.png" alt="户部尚书" />
+    </div>
+    主管全国财政、赋税与户籍的最高行政官
+  </wa-card>
+
+  <wa-card class="card-overview card-media">
+    <div slot="media" class="wa-frame:portrait">
+      <img src="/Dynasties/_media/中书令.png" alt="中书令" />
+    </div>
+    统领中央政务、起草诏令的核心宰辅
+  </wa-card>
+
+  <wa-card class="card-overview card-media">
+    <div slot="media" class="wa-frame:portrait">
+      <img src="/Dynasties/_media/太常卿.png" alt="太常卿" />
+    </div>
+    掌礼仪祭祀与国家典礼的最高礼官
+  </wa-card>
 </div>
 
 * 唐×10（黄），宋×10（绿），元×10（蓝），明×10（红）
@@ -32,17 +49,21 @@
 
 ### 执行政策
 
-<div style="display: flex; gap: 20px; margin: 20px 0;">
-  <div style="text-align: center;">
-    <img src="/Dynasties/_media/政策卡牌背面.png" alt="政策卡牌-背面" style="max-width: 200px; border-radius: 8px;">
-    <p>政策卡牌-背面</p>
-  </div>
-  <div style="text-align: center;">
-    <img src="/Dynasties/_media/政策卡牌正面.png" alt="政策卡牌-正面" style="max-width: 200px; border-radius: 8px;">
-    <p>政策卡牌-正面</p>
-  </div>
-</div>
+<div class="wa-grid">
+  <wa-card class="card-media">
+    <div slot="media" class="wa-frame:portrait">
+      <img src="/Dynasties/_media/政策卡牌背面.png" alt="政策卡牌-背面" />
+    </div>
+    <small class="wa-caption-s">政策卡牌 - 背面</small>
+  </wa-card>
 
+  <wa-card class="card-media">
+    <div slot="media" class="wa-frame:portrait">
+      <img src="/Dynasties/_media/政策卡牌正面.png" alt="政策卡牌-正面" />
+    </div>
+    <small class="wa-caption-s">政策卡牌 - 正面</small>
+  </wa-card>
+</div>
 * 每个阵营一套×4
 
 * 干旱×3，地震×3，洪水×3，瘟疫×3
@@ -111,17 +132,74 @@
 
 ### 颁布政策
 
-<div style="display: flex; gap: 20px; margin: 20px 0;">
-  <div style="text-align: center;">
-    <img src="/Dynasties/_media/颁布政策-背面.png" alt="颁布政策-背面" style="max-width: 200px; border-radius: 8px;">
-    <p>颁布政策-背面</p>
-  </div>
-  <div style="text-align: center;">
-    <img src="/Dynasties/_media/颁布政策-正面.png" alt="颁布政策-正面" style="max-width: 200px; border-radius: 8px;">
-    <p>颁布政策-正面</p>
-  </div>
+<div class="wa-grid">
+  <wa-card class="card-media">
+    <div slot="media" class="wa-frame:portrait">
+      <img src="/Dynasties/_media/颁布政策-背面.png" alt="颁布政策 - 背面" />
+    </div>
+    <small class="wa-caption-s">颁布政策 - 背面</small>
+  </wa-card>
+
+  <wa-card class="card-media">
+    <div slot="media" class="wa-frame:portrait">
+      <img src="/Dynasties/_media/颁布政策-正面.png" alt="颁布政策 - 正面" />
+    </div>
+    <small class="wa-caption-s">颁布政策 - 正面</small>
+  </wa-card>
 </div>
 
+<style>
+  .card-media {
+    max-width: 300px;
+  }
+  /* 如果需要可以微调 grid 间距与响应列数 */
+  .wa-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 20px;
+    margin: 20px 0;
+    align-items: start;
+  }
+  /* 保证 wa-frame 中的图片完整显示，不被裁切 */
+  .wa-frame\:landscape {
+    aspect-ratio: 16/9;
+    overflow: hidden;
+    display: block;
+  }
+  .wa-frame\:landscape img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    object-position: center;
+    display: block;
+  }
+  /* 竖幅图片 - 使用你提供的比例 6.3:8.8 (等价 63/88) */
+  .wa-frame\:portrait {
+    aspect-ratio: 63/88;
+    overflow: hidden;
+    display: block;
+  }
+  .wa-frame\:portrait img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    object-position: center;
+    display: block;
+  }
+  /* 正方形图片 - 比例 1:1 */
+  .wa-frame\:square {
+    aspect-ratio: 1/1;
+    overflow: hidden;
+    display: block;
+  }
+  .wa-frame\:square img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    object-position: center;
+    display: block;
+  }
+</style>
 * 每个阵营一套×4
 * 割壤练兵×1，减籍抚民×1，招商扩市×1，祈天延命×1
 

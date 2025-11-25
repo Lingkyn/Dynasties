@@ -5,9 +5,29 @@
 ### Card Examples
 
 <div style="display: flex; gap: 20px; margin: 20px 0;">
-  <img src="/Dynasties/_media/户部尚书.png" alt="Minister of Treasury" style="max-width: 200px; border-radius: 8px;">
-  <img src="/Dynasties/_media/中书令.png" alt="Secretary of State" style="max-width: 200px; border-radius: 8px;">
-  <img src="/Dynasties/_media/太常卿.png" alt="Master of Ceremonies" style="max-width: 200px; border-radius: 8px;">
+  <wa-card class="card-overview" style="width:200px;">
+    <div slot="media" class="wa-frame:portrait">
+      <img src="/Dynasties/_media/户部尚书.png" alt="Minister of Treasury" />
+    </div>
+    <strong>户部尚书</strong>
+    <small class="wa-caption-s">Minister of Treasury</small>
+  </wa-card>
+
+  <wa-card class="card-overview" style="width:200px;">
+    <div slot="media" class="wa-frame:portrait">
+      <img src="/Dynasties/_media/中书令.png" alt="Secretary of State" />
+    </div>
+    <strong>中书令</strong>
+    <small class="wa-caption-s">Secretary of State</small>
+  </wa-card>
+
+  <wa-card class="card-overview" style="width:200px;">
+    <div slot="media" class="wa-frame:portrait">
+      <img src="/Dynasties/_media/太常卿.png" alt="Master of Ceremonies" />
+    </div>
+    <strong>太常卿</strong>
+    <small class="wa-caption-s">Master of Ceremonies</small>
+  </wa-card>
 </div>
 
 * Tang ×10 (Yellow), Song ×10 (Green), Yuan ×10 (Blue), Ming ×10 (Red)
@@ -33,20 +53,78 @@
 ### Execute Policy
 
 <div style="display: flex; gap: 20px; margin: 20px 0;">
-  <div style="text-align: center;">
-    <img src="/Dynasties/_media/政策卡牌背面.png" alt="Policy Card - Back" style="max-width: 200px; border-radius: 8px;">
-    <p>Policy Card - Back</p>
-  </div>
-  <div style="text-align: center;">
-    <img src="/Dynasties/_media/政策卡牌正面.png" alt="Policy Card - Front" style="max-width: 200px; border-radius: 8px;">
-    <p>Policy Card - Front</p>
-  </div>
-</div>
+  <wa-card class="card-media" style="width:220px; text-align:center;">
+    <div slot="media" class="wa-frame:portrait">
+      <img src="/Dynasties/_media/政策卡牌背面.png" alt="Policy Card - Back" />
+    </div>
+    <small class="wa-caption-s">Policy Card - Back</small>
+  </wa-card>
 
+  <wa-card class="card-media" style="width:220px; text-align:center;">
+    <div slot="media" class="wa-frame:portrait">
+      <img src="/Dynasties/_media/政策卡牌正面.png" alt="Policy Card - Front" />
+    </div>
+    <small class="wa-caption-s">Policy Card - Front</small>
+  </wa-card>
+</div>
 * One set per faction ×4
 
 * Drought ×3, Earthquake ×3, Flood ×3, Plague ×3
 * Rebellion ×3, Invasion ×3, Coup ×3, Corruption ×2
+<style>
+  .card-media {
+    max-width: 300px;
+  }
+  /* 如果需要可以微调 grid 间距与响应列数 */
+  .wa-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 20px;
+    margin: 20px 0;
+    align-items: start;
+  }
+  /* 保证 wa-frame 中的图片完整显示，不被裁切 */
+  .wa-frame\:landscape {
+    aspect-ratio: 16/9;
+    overflow: hidden;
+    display: block;
+  }
+  .wa-frame\:landscape img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    object-position: center;
+    display: block;
+  }
+  /* 竖幅图片 - 使用你提供的比例 6.3:8.8 (等价 63/88) */
+  .wa-frame\:portrait {
+    aspect-ratio: 63/88;
+    overflow: hidden;
+    display: block;
+  }
+  .wa-frame\:portrait img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    object-position: center;
+    display: block;
+  }
+  /* Square images - 1:1 ratio */
+  .wa-frame\:square {
+    aspect-ratio: 1/1;
+    overflow: hidden;
+    display: block;
+  }
+  .wa-frame\:square img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    object-position: center;
+    display: block;
+  }
+</style>
+
+
 
 #### Drought
 
@@ -112,16 +190,20 @@
 ### Issue Policy
 
 <div style="display: flex; gap: 20px; margin: 20px 0;">
-  <div style="text-align: center;">
-    <img src="/Dynasties/_media/颁布政策-背面.png" alt="Issue Policy - Back" style="max-width: 200px; border-radius: 8px;">
-    <p>Issue Policy - Back</p>
-  </div>
-  <div style="text-align: center;">
-    <img src="/Dynasties/_media/颁布政策-正面.png" alt="Issue Policy - Front" style="max-width: 200px; border-radius: 8px;">
-    <p>Issue Policy - Front</p>
-  </div>
-</div>
+  <wa-card class="card-media" style="width:220px; text-align:center;">
+    <div slot="media" class="wa-frame:portrait">
+      <img src="/Dynasties/_media/颁布政策-背面.png" alt="Issue Policy - Back" />
+    </div>
+    <small class="wa-caption-s">Issue Policy - Back</small>
+  </wa-card>
 
+  <wa-card class="card-media" style="width:220px; text-align:center;">
+    <div slot="media" class="wa-frame:portrait">
+      <img src="/Dynasties/_media/颁布政策-正面.png" alt="Issue Policy - Front" />
+    </div>
+    <small class="wa-caption-s">Issue Policy - Front</small>
+  </wa-card>
+</div>
 * One set per faction ×4
 * Cede Territory / Train Troops ×1, Reduce Subjects / Comfort People ×1, Recruit Merchants / Expand Market ×1, Blessing to Extend Life ×1
 

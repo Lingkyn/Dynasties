@@ -1,15 +1,26 @@
 # Map and Tiles
 
-<div style="display: flex; gap: 20px; margin: 20px 0;">
-  <div style="text-align: center;">
-    <img src="/Dynasties/_media/大地图.png" alt="Main Map" style="max-width: 200px; border-radius: 8px;">
-    <p>Main Map</p>
-  </div>
-  <div style="text-align: center;">
-    <img src="/Dynasties/_media/沃土.png" alt="Land Tile Example" style="max-width: 200px; border-radius: 8px;">
-    <p>Land Tile Example</p>
-  </div>
+<div class="wa-grid">
+  <wa-card class="card-media">
+    <div slot="media" class="wa-frame:square">
+      <img src="/Dynasties/_media/大地图.png" alt="Main Map" />
+    </div>
+    <p style="margin:0.5rem 0 0; text-align:center;">Main Map</p>
+  </wa-card>
+
+  <wa-card class="card-media">
+    <div slot="media" class="wa-frame:square">
+      <img src="/Dynasties/_media/沃土.png" alt="Land Tile Example" />
+    </div>
+    <p style="margin:0.5rem 0 0; text-align:center;">Land Tile Example</p>
+  </wa-card>
 </div>
+
+<style>
+  .card-media { max-width: 420px; }
+  .wa-frame\:square { aspect-ratio: 1/1; overflow: hidden; display: block; }
+  .wa-frame\:square img { width: 100%; height: 100%; object-fit: contain; object-position: center; display: block; }
+</style>
 
 * Main Map ×1
 * Land Tiles ×24: Fertile Land ×4, Plain ×12, Barren Land ×8
