@@ -1,23 +1,13 @@
-- 概览 Overview
-  - [游戏简介](overview.md)
-  - [背景设定](background.md)
-  - [设计理念](design.md)
 
-- 组件说明 Components
-  - [组件列表](components.md)
-  - [组件图示与尺寸](components-visual.md)
-
-- 游戏规则 Rules
-  - [游戏目标](goal.md)
-  - [游戏准备](setup.md)
-  - [回合结构](turns.md)
-  - [详细规则](rules.md)
-
-- 美术与问答 Art & FAQ
-  - [美术风格](art.md)
-  - [胜利与结束条件](victory.md)
-  - [FAQ 常见问题](faq.md)
-
-- 开发记录 Dev Log
-  - [测试记录](playtest.md)
-  - [版本更新日志](changelog.md)
+- 游戏组件
+  - [地图与地块](components/map-and-tiles.md)
+  - [卡牌类](components/cards.md)
+  - [标记物与棋子](components/tokens.md)
+- [游戏准备](setup.md)
+- [回合流程](turns.md)
+  
+- 系统规则详解
+  - [属性系统](rules/attributes.md)
+  - [地图系统](rules/map.md)
+  - [治理系统](rules/governance.md)
+  - [灾祸系统](rules/calamity.md)

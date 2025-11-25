@@ -29,12 +29,22 @@
       window.$docsify = {
         name: "Dynasties Board Game",
         auto2top: true,
-        coverpage: true,
-
-
-
+        
+        // Alias configuration - use same navbar for all languages
+        alias: {
+          '/.*/_navbar.md': '/_navbar.md',
+        },
+        
+        coverpage: {
+          '/': '_coverpage.md',
+          '/zh-cn/': '_coverpage.md',
+          '/en/': '_coverpage.md'
+        },
+        
+        // Navbar Configuration - like Docsify official docs
+        loadNavbar: true,
+        
         // Sidebar Configuration
-        auto2top: true,
         loadSidebar: true,
         maxLevel: 0,
         // Set subMaxLevel to 0 to remove automatic display of page table of contents (TOC) in Sidebar
@@ -48,6 +58,17 @@
           depth: 2,
         },
       };
+      
+      // Language detection and routing
+      (function() {
+        const hash = window.location.hash;
+        
+        // If accessing root without language prefix, redirect to Chinese
+        if (!hash || hash === '#/' || hash === '') {
+          window.location.hash = '#/zh-cn/';
+          return;
+        }
+      })();
     </script>
 
     <!-- Required -->
@@ -56,5 +77,6 @@
     <!-- Recommended -->
     <script src="https://cdn.jsdelivr.net/npm/docsify@4/lib/plugins/zoom-image.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/docsify@4/lib/plugins/search.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/docsify@4/lib/plugins/emoji.min.js"></script>
   </body>
 </html>
