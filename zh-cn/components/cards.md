@@ -5,9 +5,9 @@
 ### 卡牌示例
 
 <div style="display: flex; gap: 20px; margin: 20px 0;">
-  <img src="../../_media/户部尚书.png" alt="户部尚书" style="max-width: 200px; border-radius: 8px;">
-  <img src="../../_media/中书令.png" alt="中书令" style="max-width: 200px; border-radius: 8px;">
-  <img src="../../_media/太常卿.png" alt="太常卿" style="max-width: 200px; border-radius: 8px;">
+  <img src="/Dynasties/_media/户部尚书.png" alt="户部尚书" style="max-width: 200px; border-radius: 8px;">
+  <img src="/Dynasties/_media/中书令.png" alt="中书令" style="max-width: 200px; border-radius: 8px;">
+  <img src="/Dynasties/_media/太常卿.png" alt="太常卿" style="max-width: 200px; border-radius: 8px;">
 </div>
 
 * 唐×10（黄），宋×10（绿），元×10（蓝），明×10（红）
@@ -34,11 +34,11 @@
 
 <div style="display: flex; gap: 20px; margin: 20px 0;">
   <div style="text-align: center;">
-    <img src="../../_media/政策卡牌背面.png" alt="政策卡牌-背面" style="max-width: 200px; border-radius: 8px;">
+    <img src="/Dynasties/_media/政策卡牌背面.png" alt="政策卡牌-背面" style="max-width: 200px; border-radius: 8px;">
     <p>政策卡牌-背面</p>
   </div>
   <div style="text-align: center;">
-    <img src="../../_media/政策卡牌正面.png" alt="政策卡牌-正面" style="max-width: 200px; border-radius: 8px;">
+    <img src="/Dynasties/_media/政策卡牌正面.png" alt="政策卡牌-正面" style="max-width: 200px; border-radius: 8px;">
     <p>政策卡牌-正面</p>
   </div>
 </div>
@@ -113,11 +113,11 @@
 
 <div style="display: flex; gap: 20px; margin: 20px 0;">
   <div style="text-align: center;">
-    <img src="../../_media/颁布政策-背面.png" alt="颁布政策-背面" style="max-width: 200px; border-radius: 8px;">
+    <img src="/Dynasties/_media/颁布政策-背面.png" alt="颁布政策-背面" style="max-width: 200px; border-radius: 8px;">
     <p>颁布政策-背面</p>
   </div>
   <div style="text-align: center;">
-    <img src="../../_media/颁布政策-正面.png" alt="颁布政策-正面" style="max-width: 200px; border-radius: 8px;">
+    <img src="/Dynasties/_media/颁布政策-正面.png" alt="颁布政策-正面" style="max-width: 200px; border-radius: 8px;">
     <p>颁布政策-正面</p>
   </div>
 </div>

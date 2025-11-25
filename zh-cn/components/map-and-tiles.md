@@ -2,11 +2,11 @@
 
 <div style="display: flex; gap: 20px; margin: 20px 0;">
   <div style="text-align: center;">
-    <img src="../../_media/大地图.png" alt="大地图" style="max-width: 200px; border-radius: 8px;">
+    <img src="/Dynasties/_media/大地图.png" alt="大地图" style="max-width: 200px; border-radius: 8px;">
     <p>大地图</p>
   </div>
   <div style="text-align: center;">
-    <img src="../../_media/沃土.png" alt="地块板示例" style="max-width: 200px; border-radius: 8px;">
+    <img src="/Dynasties/_media/沃土.png" alt="地块板示例" style="max-width: 200px; border-radius: 8px;">
     <p>地块板示例</p>
   </div>
 </div>

@@ -5,9 +5,9 @@
 ### Card Examples
 
 <div style="display: flex; gap: 20px; margin: 20px 0;">
-  <img src="../../_media/户部尚书.png" alt="Minister of Treasury" style="max-width: 200px; border-radius: 8px;">
-  <img src="../../_media/中书令.png" alt="Secretary of State" style="max-width: 200px; border-radius: 8px;">
-  <img src="../../_media/太常卿.png" alt="Master of Ceremonies" style="max-width: 200px; border-radius: 8px;">
+  <img src="/Dynasties/_media/户部尚书.png" alt="Minister of Treasury" style="max-width: 200px; border-radius: 8px;">
+  <img src="/Dynasties/_media/中书令.png" alt="Secretary of State" style="max-width: 200px; border-radius: 8px;">
+  <img src="/Dynasties/_media/太常卿.png" alt="Master of Ceremonies" style="max-width: 200px; border-radius: 8px;">
 </div>
 
 * Tang ×10 (Yellow), Song ×10 (Green), Yuan ×10 (Blue), Ming ×10 (Red)
@@ -34,11 +34,11 @@
 
 <div style="display: flex; gap: 20px; margin: 20px 0;">
   <div style="text-align: center;">
-    <img src="../../_media/政策卡牌背面.png" alt="Policy Card - Back" style="max-width: 200px; border-radius: 8px;">
+    <img src="/Dynasties/_media/政策卡牌背面.png" alt="Policy Card - Back" style="max-width: 200px; border-radius: 8px;">
     <p>Policy Card - Back</p>
   </div>
   <div style="text-align: center;">
-    <img src="../../_media/政策卡牌正面.png" alt="Policy Card - Front" style="max-width: 200px; border-radius: 8px;">
+    <img src="/Dynasties/_media/政策卡牌正面.png" alt="Policy Card - Front" style="max-width: 200px; border-radius: 8px;">
     <p>Policy Card - Front</p>
   </div>
 </div>
@@ -113,11 +113,11 @@
 
 <div style="display: flex; gap: 20px; margin: 20px 0;">
   <div style="text-align: center;">
-    <img src="../../_media/颁布政策-背面.png" alt="Issue Policy - Back" style="max-width: 200px; border-radius: 8px;">
+    <img src="/Dynasties/_media/颁布政策-背面.png" alt="Issue Policy - Back" style="max-width: 200px; border-radius: 8px;">
     <p>Issue Policy - Back</p>
   </div>
   <div style="text-align: center;">
-    <img src="../../_media/颁布政策-正面.png" alt="Issue Policy - Front" style="max-width: 200px; border-radius: 8px;">
+    <img src="/Dynasties/_media/颁布政策-正面.png" alt="Issue Policy - Front" style="max-width: 200px; border-radius: 8px;">
     <p>Issue Policy - Front</p>
   </div>
 </div>

@@ -1,4 +1,4 @@
-<img src="_media/icon.svg" alt="logo" width="120" />
+<img src="/Dynasties/_media/icon.svg" alt="logo" width="120" />
 
 # Dynasties Board Game :id=dynasties
 
