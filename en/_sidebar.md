@@ -1,14 +1,14 @@
-- [Game Overview](README)
+- [Game Overview](en/README)
   
 - Game Components
-  - [Map and Tiles](components/map-and-tiles.md)
-  - [Cards](components/cards.md)
-  - [Tokens and Pieces](components/tokens.md)
-- [Game Setup](setup.md)
-- [Turn Sequence](turns.md)
+  - [Map and Tiles](en/components/map-and-tiles.md)
+  - [Cards](en/components/cards.md)
+  - [Tokens and Pieces](en/components/tokens.md)
+- [Game Setup](en/setup.md)
+- [Turn Sequence](en/turns.md)
   
 - System Rules
-  - [Attribute System](rules/attributes.md)
-  - [Map System](rules/map.md)
-  - [Governance System](rules/governance.md)
-  - [Calamity System](rules/calamity.md)
+  - [Attribute System](en/rules/attributes.md)
+  - [Map System](en/rules/map.md)
+  - [Governance System](en/rules/governance.md)
+  - [Calamity System](en/rules/calamity.md)
